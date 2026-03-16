@@ -7,7 +7,7 @@ const LOG_DIR = join(
   "opencode",
   "logs"
 )
-const LOG_FILE = join(LOG_DIR, "rate-limit-fallback.log")
+const LOG_FILE = join(LOG_DIR, "fallback.log")
 
 type Level = "INFO" | "WARN" | "ERROR"
 

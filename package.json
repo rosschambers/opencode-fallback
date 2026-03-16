@@ -1,7 +1,7 @@
 {
-	"name": "opencode-rate-limit-fallback",
-	"version": "0.3.1",
-	"description": "OpenCode plugin that automatically switches to a fallback model when rate limits are hit",
+	"name": "opencode-fallback",
+	"version": "0.4.0",
+	"description": "OpenCode plugin that recovers from provider disconnects (resuming mid-response) and rate limits (switching to fallback model)",
 	"type": "module",
 	"main": "index.ts",
 	"files": [
@@ -13,8 +13,11 @@
 	},
 	"keywords": [
 		"opencode",
-		"rate-limit",
 		"fallback",
+		"disconnect",
+		"resume",
+		"recovery",
+		"rate-limit",
 		"model",
 		"plugin"
 	],

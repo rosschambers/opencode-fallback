@@ -1,8 +1,10 @@
 // Only export the plugin function - OpenCode calls ALL exports as plugins
-export { createPlugin as RateLimitFallbackPlugin } from "./src/plugin"
+// WARNING: Only ONE named function export is allowed. OpenCode calls every export as a plugin.
+export { createPlugin as FallbackPlugin } from "./src/plugin"
 
 // Type exports are fine (stripped at runtime)
 export type {
+  FallbackConfig,
   RateLimitFallbackConfig,
   FallbackModel,
   FallbackModelObject,
