@@ -9,7 +9,8 @@
 		"src"
 	],
 	"scripts": {
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"test": "bun test"
 	},
 	"keywords": [
 		"opencode",
@@ -30,8 +31,12 @@
 	"peerDependencies": {
 		"@opencode-ai/plugin": ">=1.0.0"
 	},
+	"dependencies": {
+		"@opencode/plugin": "2.0.32"
+	},
 	"devDependencies": {
 		"@opencode-ai/plugin": "^1.0.0",
+		"@types/bun": "^1.0.0",
 		"@types/node": "^22.0.0",
 		"typescript": "^5.0.0"
 	}
